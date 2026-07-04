@@ -201,7 +201,7 @@ html:not(.js) .line-inner { transform: none !important; }
   margin-bottom: 1.4rem;
 }
 .hero-title {
-  font-size: min(clamp(2.5rem, 9.2vw, 8.2rem), 15vh); /* cap by height on short viewports */
+  font-size: min(clamp(2.2rem, 7vw, 6.2rem), 15vh); /* cap by height on short viewports */
   margin-bottom: 1.6rem;
 }
 .title-dot { color: var(--siegel-hell); }
