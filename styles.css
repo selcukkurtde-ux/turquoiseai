@@ -15,9 +15,9 @@
   --papier-tief: #E7E9E5;
   --tinte: #191C1F;
   --tinte-soft: #4A4F55;
-  --siegel: #B01E28;      /* sealing-wax red — the legal boundary */
-  --siegel-hell: #E0565C; /* red for text/lines on dark */
-  --licht: #58D5C9;       /* turquoise data-light — the brand color; data is turquoise, the law is red */
+  --siegel: #0E8A80;      /* deep turquoise — boundary, buttons, accents on paper */
+  --siegel-hell: #58D5C9; /* turquoise for lines/text on dark */
+  --licht: #A9EFE6;       /* pale mint data-light */
 
   --font-display: "Archivo", "Helvetica Neue", sans-serif;
   --font-body: "IBM Plex Sans", "Helvetica Neue", sans-serif;
@@ -149,7 +149,7 @@ html:not(.js) .line-inner { transform: none !important; }
   width: 10px; height: 10px;
   margin: -5px 0 0 -5px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(224, 86, 92, 0.95) 0%, rgba(224, 86, 92, 0) 70%);
+  background: radial-gradient(circle, rgba(88, 213, 201, 0.95) 0%, rgba(88, 213, 201, 0) 70%);
   opacity: 0;
 }
 
@@ -228,7 +228,7 @@ html:not(.js) .line-inner { transform: none !important; }
   background: var(--siegel);
   color: #FFF;
 }
-.btn--seal:hover { background: #8E141D; }
+.btn--seal:hover { background: #0B6B63; }
 .btn--ghost {
   border-color: var(--rauch-dim);
   color: var(--papier);
@@ -750,8 +750,72 @@ html:not(.js) .line-inner { transform: none !important; }
 .footer-links a:hover { color: var(--papier); }
 
 /* ============================================================
+   NAV LINKS / LANGUAGE / TICKER
+   ============================================================ */
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.nav-links a {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--rauch);
+}
+.nav-links a:hover { color: var(--papier); }
+.nav-right { display: flex; align-items: center; gap: 1rem; }
+.lang { display: flex; }
+.lang button {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  background: transparent;
+  color: var(--rauch);
+  border: 1px solid var(--rauch-dim);
+  padding: 0.45em 0.7em;
+  cursor: pointer;
+}
+.lang button + button { border-left: 0; }
+.lang button:hover { color: var(--papier); }
+.lang button.is-active {
+  color: var(--graphit-tief);
+  background: var(--siegel-hell);
+  border-color: var(--siegel-hell);
+}
+
+.ticker {
+  overflow: hidden;
+  background: var(--graphit-tief);
+  border-block: 1px solid var(--rauch-dim);
+  padding: 1.5rem 0;
+}
+.ticker-track {
+  display: flex;
+  gap: 3.5rem;
+  width: max-content;
+  animation: tick 55s linear infinite;
+}
+.ticker-track span {
+  font-family: var(--font-display);
+  font-variation-settings: "wdth" 118;
+  font-weight: 620;
+  font-size: clamp(1.3rem, 2.4vw, 2rem);
+  color: var(--papier);
+  white-space: nowrap;
+}
+.ticker-track .tick-sep { color: var(--siegel-hell); }
+@keyframes tick { to { transform: translateX(-50%); } }
+.static .ticker-track { animation: none; }
+
+/* ============================================================
    RESPONSIVE
    ============================================================ */
+@media (max-width: 1180px) {
+  .nav-links { display: none; }
+}
 @media (max-width: 960px) {
   .law-grid { grid-template-columns: 1fr; }
   .task-grid { grid-template-columns: repeat(2, 1fr); }
@@ -799,6 +863,7 @@ html:not(.js) .line-inner { transform: none !important; }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .seal-text { animation: none; }
+  .ticker-track { animation: none; flex-wrap: wrap; }
   .led { animation: none !important; }
   .js [data-reveal] { opacity: 1; transform: none; }
   .js .line-inner { transform: none; }
