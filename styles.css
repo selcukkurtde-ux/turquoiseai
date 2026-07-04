@@ -718,7 +718,7 @@ html:not(.js) .line-inner { transform: none !important; }
 .seal-text text {
   font-family: var(--font-mono);
   font-size: 11.5px;
-  letter-spacing: 0.28em;
+  letter-spacing: 0.22em;
   fill: var(--siegel-hell);
 }
 .seal-center {
