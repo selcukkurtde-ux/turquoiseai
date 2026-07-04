@@ -62,7 +62,7 @@
     "t.c6h": ["Das Modell ändert sich unter Ihnen", "Model altınızdan değişir"],
     "t.c6p": ["Cloud-Modelle werden abgekündigt, ausgetauscht und still nachjustiert. Das Modell, das Sie im Januar validiert haben, antwortet im Juni womöglich anders. Auf eigener Hardware ändert sich nichts, bis Sie es entscheiden.", "Bulut modelleri emekliye ayrılır, değiştirilir, sessizce yeniden ayarlanır. Ocak'ta doğruladığınız model Haziran'da farklı cevap verebilir. Kendi donanımınızda siz karar verene kadar hiçbir şey değişmez."],
     "t.mk": ["Die Kurzfassung", "Kısa özet"],
-    "t.mq": ["Besitzen ist sexy. Mieten ist Abhängigkeit mit monatlicher Rechnung.", "Sahip olmak çekicidir. Kiralamak, aylık faturalı bağımlılıktır."],
+    "t.mq": ["Besitzen ist attraktiv. Mieten ist Abhängigkeit mit monatlicher Rechnung.", "Sahip olmak çekicidir. Kiralamak, aylık faturalı bağımlılıktır."],
 
     "cl.label": ["Der Fußabdruck", "Karbon ayak izi"],
     "cl.h2": ["Cloud-KI ist nicht<br>klimafreundlich.", "Bulut yapay zekâ<br>iklim dostu değil."],
