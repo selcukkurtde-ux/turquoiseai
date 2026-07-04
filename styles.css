@@ -192,6 +192,7 @@ html:not(.js) .line-inner { transform: none !important; }
 .hero-inner {
   position: relative;
   z-index: 6;
+  margin-top: clamp(120px, 16vh, 180px); /* never slide up under the nav */
   padding: 0 calc(var(--frame-inset) + 22px) calc(var(--frame-inset) + 84px);
   max-width: 1100px;
 }
@@ -200,7 +201,7 @@ html:not(.js) .line-inner { transform: none !important; }
   margin-bottom: 1.4rem;
 }
 .hero-title {
-  font-size: clamp(2.5rem, 9.2vw, 8.2rem);
+  font-size: min(clamp(2.5rem, 9.2vw, 8.2rem), 15vh); /* cap by height on short viewports */
   margin-bottom: 1.6rem;
 }
 .title-dot { color: var(--siegel-hell); }
