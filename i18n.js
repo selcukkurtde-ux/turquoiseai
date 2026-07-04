@@ -11,8 +11,8 @@
     "nav.cta": ["Erstgespräch buchen", "Görüşme planla"],
 
     "hero.eyebrow": ["München — lokale LLM-Systeme für regulierte Kanzleien und Praxen", "Münih — regüle sektörler için yerel LLM sistemleri"],
-    "hero.t1": ["KI, die das Haus", "Binadan asla"],
-    "hero.t2": ["niemals", "çıkmayan"],
+    "hero.t1": ["KI, die niemals", "Binadan asla"],
+    "hero.t2": ["das Haus", "çıkmayan"],
     "hero.t3": ['verlässt<span class="title-dot">.</span>', 'yapay zekâ<span class="title-dot">.</span>'],
     "hero.s1": ["Wir planen, bauen und betreiben Sprachmodell-Systeme innerhalb Ihrer Wände —", "Dil modeli sistemlerini sizin duvarlarınızın içinde kuruyor ve işletiyoruz —"],
     "hero.s2": ["für Häuser, deren Akten das Grundstück nicht verlassen dürfen. Recht. Steuern. Medizin.", "dosyaları dışarı çıkamayan firmalar için. Hukuk. Vergi. Tıp."],
